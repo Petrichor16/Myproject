@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/view_35"
+            android:layout_height="@dimen/view_35"
+            android:layout_gravity="center|left"
+            app:srcCompat="@drawable/ic_https_black_24dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/line" />
+
+        <EditText
+            android:id="@+id/login_pw_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_edittext_bg"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM,.?!"
+            android:ems="10"
+            android:hint="@string/please_put_pw"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorGray"></View>
+
+
+    <Button
+        android:id="@+id/btn_login_pw"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_login_bg"
+        android:scaleType="centerCrop"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp" /><!--去掉button按钮的阴影效果-->
+
+</LinearLayout>

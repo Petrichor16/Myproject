@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.ombre.woodhouse.UI.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <!--login_back_bt：返回按键-->
+        <ImageView
+            android:id="@+id/back_findPW"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:src="@mipmap/btn_back_normal" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="@string/find_pw"
+            android:textColor="@color/colorGray_1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="65dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/view_35"
+            android:layout_height="@dimen/view_35"
+            android:layout_gravity="center|left"
+            app:srcCompat="@drawable/ic_stay_primary_portrait_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/line" />
+
+        <EditText
+            android:id="@+id/findPW_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_edittext_bg"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/please_put_phone"
+            android:inputType="textPersonName"
+            android:maxLength="11"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorGray"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/view_35"
+            android:layout_height="@dimen/view_35"
+            android:layout_gravity="center|left"
+            android:src="@drawable/login_pw"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/line" />
+
+        <EditText
+            android:id="@+id/findPWCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_edittext_bg"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/please_verification"
+            android:inputType="textPersonName"
+            android:maxLength="4"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/verfication_findPW"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@drawable/btn_verification_before"
+            android:text="获取验证码"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorGray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/view_35"
+            android:layout_height="@dimen/view_35"
+            android:layout_gravity="center|left"
+            app:srcCompat="@drawable/ic_https_black_24dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/line" />
+
+        <EditText
+            android:id="@+id/findPW_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_edittext_bg"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM,.?!"
+            android:ems="10"
+            android:hint="@string/please_put_newpw"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/findPW_versionBtn"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pw_version" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorGray"></View>
+
+    <TextView
+        android:id="@+id/findPW_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right"
+        android:text="0/16"
+        android:textColor="@color/colorRed" />
+
+    <Button
+        android:id="@+id/btn_findPW"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_login_bg"
+        android:scaleType="centerCrop"
+        android:text="@string/find_pw"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+</LinearLayout>

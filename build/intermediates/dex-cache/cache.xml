@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\programme\AS\WoodHouse\app\libs\SMSSDK-3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="799ffc6a5e73476d4b89e74ad7065e0a35e272fa">
+        <dex dex="D:\programme\AS\WoodHouse\app\build\intermediates\pre-dexed\debug\SMSSDK-3.1.0_59ab4bcd66ca0d59cc7002b569cb64537b8008a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\programme\AS\WoodHouse\app\libs\MobCommons-2017.1213.1552.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5fba829e3a26e2b128297a10a9c78dd7da981d42">
+        <dex dex="D:\programme\AS\WoodHouse\app\build\intermediates\pre-dexed\debug\MobCommons-2017.1213.1552_ffea2d516e760c98a10aae6262382e916c6494e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\programme\AS\WoodHouse\app\libs\MobTools-2017.1213.1552.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2be7e86c9d0a6162e8c2f633d5d2d500054cb330">
+        <dex dex="D:\programme\AS\WoodHouse\app\build\intermediates\pre-dexed\debug\MobTools-2017.1213.1552_cb7c2c86ede28026e2318aee067ccd4213aa9b6f.jar" />
+    </item>
+
+</items>

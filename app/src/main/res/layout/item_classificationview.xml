@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@color/generalitem_check_false">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/calssfication_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/view_10"
+        android:layout_gravity="center"
+        android:src="@mipmap/nopic"
+      />
+
+    <TextView
+        android:id="@+id/calssfication_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="5dp"
+        android:text="二级分类"
+        android:textColor="@color/colorGray_2"
+        android:textSize="13dp" />
+</LinearLayout>

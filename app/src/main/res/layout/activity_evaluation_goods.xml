@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGray_4"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goodEva_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_chevron_left_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="商品评价"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/submit_eva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_10"
+            android:text="提交评价"
+            android:onClick="onClick"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/view_10"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号:"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/eva_orderNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_10"
+            android:gravity="center"
+           android:textSize="16sp"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/view_10"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品品质:"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+
+        <RatingBar
+            android:id="@+id/eva_startLevel"
+            style="@style/mRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/eva_content"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/look_around"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+</LinearLayout>

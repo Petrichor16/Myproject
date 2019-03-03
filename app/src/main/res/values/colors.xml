@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#c4c3c3</color>
+    <color name="colorWhite">#fffefe</color>
+    <color name="btn_login_color">#60defa</color>
+    <color name="btn_login_bg_pressed">#01c1ec</color>
+    <color name="colorGray_1">#706f6f</color>
+    <color name="colorGray_2">#4b4b4b</color>
+    <color name="colorGray_3">#1d1c1c</color>
+    <color name="colorGray_4">#1e1e1e</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ed0202</color>
+    <color name="cart_empty">#e2e1e1</color>
+    <color name="generalitem_check_false">#aaf1efef</color>
+    <color name="colorOrange">#ff8e37</color>
+    <color name="colorback_Login">#fc4310</color>
+    <color name="color_orange">#fa8219</color>
+    <color name="comm_detaigls_bg">#94020202</color>
+    <color name="commdetails_back">#38969595</color>
+    <color name="colorDialog">#038f8e8e</color>
+</resources>

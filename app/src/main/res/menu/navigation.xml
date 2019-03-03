@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--底部菜单栏设计-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/bottomtitle_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/bottomtitle_dashboard" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="@string/bottomtitle_cart" />
+    <item
+        android:id="@+id/navigation_my"
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:title="@string/bottomtitle_my" />
+
+</menu>

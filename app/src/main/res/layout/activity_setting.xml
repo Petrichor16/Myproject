@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/cart_empty"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGray_4"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/setting_back"
+
+            android:layout_width="35dp"
+            android:onClick="onClick"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_chevron_left_white_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:onClick="onClick"
+            android:id="@+id/setting_personInfo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_45"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="个人信息"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_personAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_45"
+            android:onClick="onClick"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="我的地址"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_modifyPW"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_45"
+            android:layout_marginTop="1dp"
+            android:onClick="onClick"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView221"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="修改密码"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/setting_Consultation"
+            android:layout_width="match_parent"
+            android:onClick="onClick"
+            android:layout_height="@dimen/view_45"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView251"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="客服咨询"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_About"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_45"
+            android:layout_marginTop="1dp"
+            android:onClick="onClick"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="关于木屋"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/back_loginstate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorRed"
+            android:textSize="18dp"
+            android:text="退出登录" />
+    </FrameLayout>
+</LinearLayout>
